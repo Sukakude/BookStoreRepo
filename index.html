@@ -9,6 +9,9 @@
         <!-- Font awesome links -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
         <!-- CSS File -->
         <link rel="stylesheet" href="style.css">
     </head>
@@ -54,7 +57,56 @@
                     <a href="#" class="fas fa-user"></a>
         </nav>
 
-        <!-- Javascript file -->
+        <!-- Login Form -->
+        <div class="login-form-container">
+
+            <div id="close-login-btn" class="fas fa-times"></div>
+
+            <form action="">
+                <h3>Sign In</h3>
+                <span>Username</span>
+                <input type="email" name="" placeholder="Email" class="form-input">
+
+                <span>Password</span>
+                <input type="password" name="" placeholder="Password" class="form-input">
+
+                <div class="check-box">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <input type="submit" value="Sign In" id="form-submit" class="btn">
+                <p>Forgot Password? <a href="">Click Here</a></p>
+                <p>Don't Have An Account? <a href="">Create Account</a></p>
+            </form>
+        </div>
+
+        <!-- Hero section begins here -->
+        <section class="hero" id="hero">
+            <div class="row">
+                <div class="hero-content">
+                    <h3>Discover your next favourite book</h3>
+                    <p>Explore our vast collection of books across all genres.</p>
+                    <a href="#" class="btn" id="call-to-action-btn">Shop Now</a>
+                </div>
+                <div class="swiper slideshow">
+                    <div class="swiper-wrapper wrapper">
+                        <!-- These images need to be loaded from the database -->
+                        <a href="" class="swiper-slide"><img src="" alt="This is an image of a book"></a>
+                    </div>
+                    <img src="This is an image representing a book stand" alt="" class="image-stand">
+                </div>
+            </div>
+        </section>
+        <!-- Hero section ends here -->
+
+
+
+
+
+        <!-- Custom Javascript file -->
         <script src="script.js"></script>
+
+        <!-- SWiper Javascript -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     </body>
 </html>

@@ -5,7 +5,7 @@
     --purple: #5300E4;
     --black: #444;
     --light-color:#666;
-    --border:.1rem solid rgba(0,0,0,.1)
+    --border:.1rem solid rgba(0,0,0,.1);
     --border-hover:.1rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -39,6 +39,26 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
     background: var(--black);
+}
+
+section{
+    padding: 5rem 9%;    
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #FFF;
+    background: var(--purple);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-submit:hover{
+    background: lightgray;
 }
 
 .header .header-1{
@@ -151,9 +171,143 @@ html::-webkit-scrollbar-thumb{
     background-color: #444;
 }
 
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top:0;
+    right: -100%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
 
+.login-form-container.active{
+    right:0;
+}
 
+.login-form-container form{
+    background: #FFF;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
 
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form-container form .form-input{
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--purple);
+    text-transform: none;
+    width: 100%;
+
+}
+
+.login-form-container form .check-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.login-form-container form .check-box label{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form #form-submit{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.login-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.hero{
+    background: rgba(0,0,0, 0.02);
+    height: 55vh;
+}
+
+.hero .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.hero .row .hero-content{
+    flex: 1 1 42rem;
+}
+
+.hero .row .slideshow{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero .row .slideshow a img{
+    height: 25rem;
+}
+
+.hero .row .slideshow a:hover img{
+    transform: scale(.9);
+}
+
+.hero .row .slideshow .image-stand{
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.hero .row .hero-content h3{
+    color: var(--purple);
+    font-size: 5.4rem;
+}
+
+.hero .row .hero-content p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
 
 
@@ -171,6 +325,10 @@ html::-webkit-scrollbar-thumb{
 
     .header .header-1{
         padding: 2rem;
+    }
+
+    section{
+    padding: 3rem 2rem;    
     }
 }
 
@@ -207,6 +365,16 @@ html::-webkit-scrollbar-thumb{
 
     #search-btn{
         display: inline-block;
+    
+    }
+
+    .hero .row .hero-content{
+        text-align: center;
+    }
+
+    .hero .row .hero-content h3{
+    color: var(--purple);
+    font-size: 3.5rem;
     }
 }
 
